@@ -16,4 +16,6 @@ cur.execute('''INSERT INTO DRUGS VALUES ('ნალგეზინი', '13.08.2
 cur.execute('''INSERT INTO DRUGS VALUES ('პარაცეტამოლი', '08.06.2023', '7.90')''')
 cur.execute('''INSERT INTO DRUGS VALUES ('კეტონალი', '20.08.2024;', '23')''')
 
+cur.execute()
 con.commit()
+
