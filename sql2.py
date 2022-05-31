@@ -14,7 +14,7 @@ def add_drugs(name, term , price):
 cur.execute('''INSERT INTO DRUGS VALUES ('ნიმესილი','22.05.2023', 22.90)''')
 cur.execute('''INSERT INTO DRUGS VALUES ('ნალგეზინი', '13.08.2025', '9')''')
 cur.execute('''INSERT INTO DRUGS VALUES ('პარაცეტამოლი', '08.06.2023', '7.90')''')
-cur.execute('''INSERT INTO DRUGS VALUES ('კეტონალი', '20.08.2024;', '23')''')
+cur.execute('''INSERT INTO DRUGS VALUES ('კეტონალი', '20.08.2024', '23')''')
 
 cur.execute()
 con.commit()
