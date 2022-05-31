@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+</head>
+    <body>
+        
+        <header>
+            <div class="reg">
+                
+                <a href="/">ananos pharmacy</a>
+                <div>
+                    <p>
+                        <a href="sign-in">Sign in</a>
+                          or  
+                        <a href="register">register</a>
+                    </p>
+                </div>
+
+            </div>
+        </header>
+        <section>
+
+            <div class="s-1">
+
+                <div class="pharmacy">
+            
+                    {% for drugs in drugs_list %} 
+                    <div>
+                        <div>
+                            <a href="/{{drugs.get('name')}}"><div>{{drugs.get('name')}}</div></a>
+                            <div>
+                                <h3>{{drugs.get('term')}}</h3>
+                                <a>code: {{drugs.get('price')}}</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    {% endfor %}
+        
+        
+                </div>
+
+            </div>
+
+        </section>
+        
+        <!--
+            {% for drugs in drugs_list %} 
+                <div>
+                    <h2>{{drugs.get('name')}}</h2>
+                    <h3>{{drugs.get('term')}}</h3>
+                    <h4>{{drugs.get('price')}}</h4>
+                    <h4>description</h4>
+                    <p>{drugs.get('name')}} - {{drugs.get('term')}}   -  {{drugs.get('price')}}
+                </div>
+            {% endfor %}
+        -->
+    </body>
+</html>
